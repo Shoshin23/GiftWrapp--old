@@ -20,9 +20,6 @@ class GiftDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        giftTitle.text = gift.giftName
-        giftPrice.text = String(gift.giftPrice)
-        giftDescription.text = gift.giftDescription
         giftImageView.image = UIImage(named: gift.giftImage)
         
         title = gift.giftName

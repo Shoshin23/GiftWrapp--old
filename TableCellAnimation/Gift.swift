@@ -10,11 +10,11 @@ import UIKit
 
 
 class Gift:NSObject {
-    var giftName: String
-    var giftDescription: String
-    var giftPrice: Int
-    var giftImage: String
-    var giftAvailableAt: String
+    var giftName = " "
+    var giftDescription = " "
+    var giftPrice = 0
+    var giftImage = " "
+    var giftAvailableAt = " "
     
     init(giftName:String, giftPrice:Int, giftDescription:String, giftImage:String, giftAvailableAt: String) {
         self.giftName = giftName
