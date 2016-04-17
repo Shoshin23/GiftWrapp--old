@@ -25,6 +25,8 @@ class GiftDetailViewController: UIViewController {
         giftDescription.text = gift.giftDescription
         giftImageView.image = UIImage(named: gift.giftImage)
         
+        title = gift.giftName
+        
         
     }
 

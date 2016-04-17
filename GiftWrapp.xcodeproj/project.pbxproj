@@ -65,8 +65,8 @@
 		F41EB4A01A1A561400DAF540 = {
 			isa = PBXGroup;
 			children = (
-				F41EB4AB1A1A561400DAF540 /* TableCellAnimation */,
-				F41EB4C11A1A561400DAF540 /* TableCellAnimationTests */,
+				F41EB4AB1A1A561400DAF540 /* GiftWrapp */,
+				F41EB4C11A1A561400DAF540 /* GiftWrappTests */,
 				F41EB4AA1A1A561400DAF540 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,7 +80,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F41EB4AB1A1A561400DAF540 /* TableCellAnimation */ = {
+		F41EB4AB1A1A561400DAF540 /* GiftWrapp */ = {
 			isa = PBXGroup;
 			children = (
 				F41EB4AE1A1A561400DAF540 /* AppDelegate.swift */,
@@ -93,6 +93,7 @@
 				F41EB4CE1A1A57B400DAF540 /* ArticleTableViewController.swift */,
 				F41EB4D01A1A582100DAF540 /* ArticleTableViewCell.swift */,
 			);
+			name = GiftWrapp;
 			path = TableCellAnimation;
 			sourceTree = "<group>";
 		};
@@ -104,12 +105,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F41EB4C11A1A561400DAF540 /* TableCellAnimationTests */ = {
+		F41EB4C11A1A561400DAF540 /* GiftWrappTests */ = {
 			isa = PBXGroup;
 			children = (
 				F41EB4C41A1A561400DAF540 /* TableCellAnimationTests.swift */,
 				F41EB4C21A1A561400DAF540 /* Supporting Files */,
 			);
+			name = GiftWrappTests;
 			path = TableCellAnimationTests;
 			sourceTree = "<group>";
 		};
