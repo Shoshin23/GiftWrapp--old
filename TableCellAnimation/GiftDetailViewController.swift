@@ -30,12 +30,6 @@ class GiftDetailViewController: UIViewController {
         giftDescription.text = gift.giftDescription
         
         title = "My Gifts"
-        print("In DetailView Controller")
-        
-//        tableView.estimatedRowHeight = 36.0
-//        tableView.rowHeight = UITableViewAutomaticDimension
-        
-        
         
     }
     
