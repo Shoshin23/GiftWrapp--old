@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30DD2AA71CC3CAAE0036CB50 /* GiftDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DD2AA61CC3CAAE0036CB50 /* GiftDetailTableViewCell.swift */; };
 		30FA3EA41CC3611000937FF2 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FA3EA31CC3610F00937FF2 /* Gift.swift */; };
 		30FA3EF51CC3BC7600937FF2 /* GiftDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */; };
 		F41EB4AF1A1A561400DAF540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41EB4AE1A1A561400DAF540 /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30DD2AA61CC3CAAE0036CB50 /* GiftDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GiftDetailTableViewCell.swift; path = ../GiftDetailTableViewCell.swift; sourceTree = "<group>"; };
 		30FA3EA31CC3610F00937FF2 /* Gift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftDetailViewController.swift; sourceTree = "<group>"; };
 		F41EB4A91A1A561400DAF540 /* GiftWrapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftWrapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +88,7 @@
 				F41EB4AE1A1A561400DAF540 /* AppDelegate.swift */,
 				F41EB4B21A1A561400DAF540 /* Main.storyboard */,
 				30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */,
+				30DD2AA61CC3CAAE0036CB50 /* GiftDetailTableViewCell.swift */,
 				F41EB4B51A1A561400DAF540 /* Images.xcassets */,
 				30FA3EA31CC3610F00937FF2 /* Gift.swift */,
 				F41EB4B71A1A561400DAF540 /* LaunchScreen.xib */,
@@ -226,6 +229,7 @@
 			files = (
 				F41EB4CF1A1A57B400DAF540 /* ArticleTableViewController.swift in Sources */,
 				30FA3EA41CC3611000937FF2 /* Gift.swift in Sources */,
+				30DD2AA71CC3CAAE0036CB50 /* GiftDetailTableViewCell.swift in Sources */,
 				F41EB4D11A1A582100DAF540 /* ArticleTableViewCell.swift in Sources */,
 				F41EB4AF1A1A561400DAF540 /* AppDelegate.swift in Sources */,
 				30FA3EF51CC3BC7600937FF2 /* GiftDetailViewController.swift in Sources */,

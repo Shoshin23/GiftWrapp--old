@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--GiftWrapp-->
@@ -73,7 +74,7 @@
                                     <outlet property="postImageView" destination="e1J-On-6w0" id="y0G-VP-q37"/>
                                     <outlet property="priceLabel" destination="szo-VW-qwb" id="bi9-s6-7Ym"/>
                                     <outlet property="titleLabel" destination="Pdg-kJ-nnL" id="wln-Np-tZu"/>
-                                    <segue destination="xzd-7R-hIg" kind="show" identifier="showGift" id="L15-ji-068"/>
+                                    <segue destination="xzd-7R-hIg" kind="presentation" identifier="showGift" id="L15-ji-068"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -105,26 +106,64 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f72-oV-zgq">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <imageView key="tableHeaderView" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="dZh-t1-6aa">
-                                    <rect key="frame" x="0.0" y="64" width="600" height="300"/>
+                                <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="dZh-t1-6aa">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="aZB-az-rWU">
-                                        <rect key="frame" x="0.0" y="392" width="600" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="aZB-az-rWU" customClass="GiftDetailTableViewCell" customModule="GiftWrapp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="328" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aZB-az-rWU" id="fHA-r5-yIB">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNG-sR-jeT">
+                                                    <rect key="frame" x="13" y="11" width="579" height="21"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Field" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVR-au-NTq">
+                                                            <rect key="frame" x="0.0" y="0.0" width="386" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SP0-7M-5hf">
+                                                            <rect key="frame" x="386" y="0.0" width="193" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="SP0-7M-5hf" firstAttribute="width" secondItem="oVR-au-NTq" secondAttribute="width" multiplier="0.5" id="xQC-mP-XoX"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="vNG-sR-jeT" firstAttribute="leading" secondItem="fHA-r5-yIB" secondAttribute="leadingMargin" constant="5" id="Abs-3a-jBf"/>
+                                                <constraint firstItem="vNG-sR-jeT" firstAttribute="centerY" secondItem="fHA-r5-yIB" secondAttribute="centerY" id="Yvl-8I-0ok"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="vNG-sR-jeT" secondAttribute="trailing" id="aGt-dV-XMn"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="vNG-sR-jeT" secondAttribute="bottom" constant="3" id="ilV-oY-jZs"/>
+                                                <constraint firstItem="vNG-sR-jeT" firstAttribute="top" secondItem="fHA-r5-yIB" secondAttribute="topMargin" constant="3" id="omH-de-JJG"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="fieldLabel" destination="oVR-au-NTq" id="9ln-qa-AMz"/>
+                                            <outlet property="valueLabel" destination="SP0-7M-5hf" id="jgE-1Q-9u1"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="xzd-7R-hIg" id="3fi-vt-XDu"/>
+                                    <outlet property="delegate" destination="xzd-7R-hIg" id="WqF-Da-xzA"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="giftImageView" destination="dZh-t1-6aa" id="HY4-CA-yBl"/>
+                        <outlet property="tableView" destination="f72-oV-zgq" id="DMA-FX-9Ik"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j6u-Wm-vKQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
