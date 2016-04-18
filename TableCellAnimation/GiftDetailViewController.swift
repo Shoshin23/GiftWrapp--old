@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GiftDetailViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class GiftDetailViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     var gift: Gift!
@@ -18,41 +18,18 @@ class GiftDetailViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        giftImageView.image = UIImage(named: gift.giftImage)
+       // giftImageView.image = UIImage(named: gift.giftImage)
         
         title = gift.giftName
+        print("In DetailView Controller")
         
-        tableView.estimatedRowHeight = 36.0
-        tableView.rowHeight = UITableViewAutomaticDimension
+//        tableView.estimatedRowHeight = 36.0
+//        tableView.rowHeight = UITableViewAutomaticDimension
         
         
         
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int)
-        -> Int {
-            return 3
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath:
-        NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! GiftDetailTableViewCell
-        switch indexPath.row {
-        case 0:
-            cell.fieldLabel.text = gift.giftName
-        case 1:
-            cell.fieldLabel.text = String(gift.giftPrice)
-        case 2:
-            cell.fieldLabel.text = gift.giftDescription
-        case 3:
-            cell.fieldLabel.text = gift.giftAvailableAt
-        default:
-            cell.fieldLabel.text = ""
-            cell.valueLabel.text = ""
-        }
-        return cell }
-    
-    
+}
     
 
-}

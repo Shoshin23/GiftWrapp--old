@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		308EA83C1CC511C500C51D11 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308EA83B1CC511C500C51D11 /* MaterialView.swift */; };
 		30DD2AA71CC3CAAE0036CB50 /* GiftDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DD2AA61CC3CAAE0036CB50 /* GiftDetailTableViewCell.swift */; };
 		30FA3EA41CC3611000937FF2 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FA3EA31CC3610F00937FF2 /* Gift.swift */; };
 		30FA3EF51CC3BC7600937FF2 /* GiftDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		308EA83B1CC511C500C51D11 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		30DD2AA61CC3CAAE0036CB50 /* GiftDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GiftDetailTableViewCell.swift; path = ../GiftDetailTableViewCell.swift; sourceTree = "<group>"; };
 		30FA3EA31CC3610F00937FF2 /* Gift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftDetailViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		308EA83A1CC511B500C51D11 /* Material Design */ = {
+			isa = PBXGroup;
+			children = (
+				308EA83B1CC511C500C51D11 /* MaterialView.swift */,
+			);
+			name = "Material Design";
+			sourceTree = "<group>";
+		};
 		F41EB4A01A1A561400DAF540 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		F41EB4AB1A1A561400DAF540 /* GiftWrapp */ = {
 			isa = PBXGroup;
 			children = (
+				308EA83A1CC511B500C51D11 /* Material Design */,
 				F41EB4AE1A1A561400DAF540 /* AppDelegate.swift */,
 				F41EB4B21A1A561400DAF540 /* Main.storyboard */,
 				30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */,
@@ -232,6 +243,7 @@
 				30DD2AA71CC3CAAE0036CB50 /* GiftDetailTableViewCell.swift in Sources */,
 				F41EB4D11A1A582100DAF540 /* ArticleTableViewCell.swift in Sources */,
 				F41EB4AF1A1A561400DAF540 /* AppDelegate.swift in Sources */,
+				308EA83C1CC511C500C51D11 /* MaterialView.swift in Sources */,
 				30FA3EF51CC3BC7600937FF2 /* GiftDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
