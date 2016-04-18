@@ -10,15 +10,24 @@ import UIKit
 
 class GiftDetailViewController: UIViewController {
     
-    @IBOutlet var tableView: UITableView!
     var gift: Gift!
     
+    @IBOutlet var giftTitle: UILabel!
     @IBOutlet var giftImageView: UIImageView!
+    
+    @IBOutlet var giftAvailableAt: UILabel!
+    @IBOutlet var giftPrice: UILabel!
+    @IBOutlet var giftDescription: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       // giftImageView.image = UIImage(named: gift.giftImage)
+        giftImageView.image = UIImage(named: gift.giftImage)
+        giftTitle.text = gift.giftName
+        giftPrice.text = "$" + String(gift.giftPrice)
+        giftAvailableAt.text = gift.giftAvailableAt
+        giftDescription.text = gift.giftDescription
         
         title = gift.giftName
         print("In DetailView Controller")
