@@ -16,21 +16,6 @@ class ArticleTableViewController: UITableViewController {
     
     
     
-    
-    
-    
-//    let postTitles = ["Use Background Transfer Service To Download File in Background",
-//    "First Time App Developer Success Stories Part 1",
-//    "Adding Animated Effects to iOS App Using UIKit Dynamics",
-//    "Working with Game Center and Game Kit Framework",
-//    "How to Access iOS Calendar, Events and Reminders",
-//    "Creating Circular Profile Image"];
-//    
-//    let postDescriptions = ["Lorem ipsum dolor sit amet, vix at illud zril. Ei per labore percipitur, et graeci eripuit vel. Quod interpretaris vis eu, nam ne clita legimus. Viris quaerendum id vis. Nec ex mollis contentiones, ne probo imperdiet sed.","Lorem ipsum dolor sit amet, vix at illud zril. Ei per labore percipitur, et graeci eripuit vel. Quod interpretaris vis eu, nam ne clita legimus. Viris quaerendum id vis. Nec ex mollis contentiones, ne probo imperdiet sed.", "Lorem ipsum dolor sit amet, vix at illud zril. Ei per labore percipitur, et graeci eripuit vel. Quod interpretaris vis eu, nam ne clita legimus. Viris quaerendum id vis. Nec ex mollis contentiones, ne probo imperdiet sed.", "Lorem ipsum dolor sit amet, vix at illud zril. Ei per labore percipitur, et graeci eripuit vel. Quod interpretaris vis eu, nam ne clita legimus. Viris quaerendum id vis. Nec ex mollis contentiones, ne probo imperdiet sed.", "Lorem ipsum dolor sit amet, vix at illud zril. Ei per labore percipitur, et graeci eripuit vel. Quod interpretaris vis eu, nam ne clita legimus. Viris quaerendum id vis. Nec ex mollis contentiones, ne probo imperdiet sed.","Lorem ipsum dolor sit amet, vix at illud zril. Ei per labore percipitur, et graeci eripuit vel. Quod interpretaris vis eu, nam ne clita legimus. Viris quaerendum id vis. Nec ex mollis contentiones, ne probo imperdiet sed.","Lorem ipsum dolor sit amet, vix at illud zril. Ei per labore percipitur, et graeci eripuit vel. Quod interpretaris vis eu, nam ne clita legimus. Viris quaerendum id vis. Nec ex mollis contentiones, ne probo imperdiet sed."]
-//    
-//    let postPrices = ["$ 34", "$44", "$54", "$ 64", "$ 74", "$ 75", "$ 76"]
-//    
-//    let postImages = ["bts.jpg", "first-time-developer.jpg", "uidynamics.jpg", "gamecenter.jpg", "event-kit.jpg", "circular-image.jpg"];
 
     var postShown = [Bool](count: 6, repeatedValue: false)
     
@@ -40,6 +25,7 @@ class ArticleTableViewController: UITableViewController {
         tableView.tableFooterView = UIView(frame: CGRectZero)
         tableView.separatorColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue:
             240.0/255.0, alpha: 0.8)
+        
         
         
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
