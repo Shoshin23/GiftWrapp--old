@@ -29,7 +29,7 @@ class GiftViewController: UIViewController, UITableViewDataSource, UITableViewDe
             print("In GiftViewController")
             
             
-            navigationItem.backBarButtonItem = UIBarButtonItem(title: "My Gifts", style: .Plain, target: nil, action: nil)
+            navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)
             
             // Uncomment the following line to preserve selection between presentations
             // self.clearsSelectionOnViewWillAppear = false
@@ -60,8 +60,8 @@ class GiftViewController: UIViewController, UITableViewDataSource, UITableViewDe
             let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! ArticleTableViewCell
             
             // Configure the cell...
-            cell.titleLabel.text = gifts[indexPath.row].giftName
-            cell.priceLabel.text = String(gifts[indexPath.row].giftPrice) //convert price to String to display in tha label.
+            cell.giftTitle.text = gifts[indexPath.row].giftName
+            cell.priceLabel.text = "$ "+String(gifts[indexPath.row].giftPrice) //convert price to String to display in tha label.
             cell.giftDescription.text = gifts[indexPath.row].giftDescription
             cell.availableAt.text = gifts[indexPath.row].giftAvailableAt
             cell.postImageView.image = UIImage(named: gifts[indexPath.row].giftImage)

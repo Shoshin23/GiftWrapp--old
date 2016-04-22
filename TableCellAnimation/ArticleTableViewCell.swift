@@ -9,9 +9,9 @@
 import UIKit
 
 class ArticleTableViewCell: UITableViewCell {
-    @IBOutlet weak var titleLabel:UILabel!
     @IBOutlet weak var postImageView:UIImageView!
 
+    @IBOutlet var giftTitle: UITextView!
     @IBOutlet var availableAt: UILabel!
     @IBOutlet var giftDescription: UITextView!
     @IBOutlet var priceLabel: UILabel!

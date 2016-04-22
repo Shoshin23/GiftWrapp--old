@@ -16,7 +16,7 @@ class MaterialView: UIView {
         layer.shadowColor = UIColor(red:0.29, green:0.73, blue:0.89, alpha:1.0).CGColor
         layer.shadowOpacity = 0.8
         layer.shadowRadius = 5.0
-        layer.shadowOffset = CGSizeMake(0.0, 3.0)
+        layer.shadowOffset = CGSizeMake(0.0, 2.0)
         
     }
     
