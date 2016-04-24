@@ -13,8 +13,8 @@ class GiftViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     @IBOutlet var tableView: UITableView!
         
-        var gifts:[Gift] = [Gift(giftName:"Hello", giftPrice: 34, giftDescription: "Hello World",giftImage: "GiftWrapp Logo", giftAvailableAt: "Amazon"), Gift(giftName: "Freitag RocketRucksack Bag", giftPrice: 56, giftDescription: "Lorem ipsum dolor sit amet, vix at illud zril. Ei per labore percipitur, et graeci eripuit vel. Quod interpretaris vis eu, nam ne clita legimus. Viris quaerendum id vis. Nec ex mollis contentiones, ne probo imperdiet sed.", giftImage: "bts", giftAvailableAt: "Amazon")]
-        
+    var gifts:[Gift] = [Gift(giftName:"Hello", giftPrice: 34, giftDescription: "Hello World",giftImage: "GiftWrapp Logo", giftAvailableAt: "Amazon"), Gift(giftName: "Freitag RocketRucksack Bag", giftPrice: 56, giftDescription: "Lorem ipsum dolor sit amet, vix at illud zril. Ei per labore percipitur, et graeci eripuit vel. Quod interpretaris vis eu, nam ne clita legimus. Viris quaerendum id vis. Nec ex mollis contentiones, ne probo imperdiet sed.", giftImage: "bts", giftAvailableAt: "Amazon"), Gift(giftName:"Braun's Men Classic Analog Display Watch", giftPrice: 160, giftDescription: "The watch is designed by the legen Dieter Rams himself and I would", giftImage:"gamecenter", giftAvailableAt: "Flipkart.com")]
+    
         
         
         
@@ -93,6 +93,11 @@ class GiftViewController: UIViewController, UITableViewDataSource, UITableViewDe
             //        // Define the final state (After the animation)
             //        UIView.animateWithDuration(1.0, animations: { cell.layer.transform = CATransform3DIdentity })
         }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+
         
         
         

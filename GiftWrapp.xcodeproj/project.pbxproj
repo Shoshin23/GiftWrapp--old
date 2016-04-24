@@ -163,7 +163,6 @@
 				30FA3EA31CC3610F00937FF2 /* Gift.swift */,
 				F41EB4B71A1A561400DAF540 /* LaunchScreen.xib */,
 				F41EB4AC1A1A561400DAF540 /* Supporting Files */,
-				F41EB4D01A1A582100DAF540 /* ArticleTableViewCell.swift */,
 				30A9B8B61CC93CC1003B19AF /* GiftViewController.swift */,
 			);
 			name = GiftWrapp;
@@ -173,6 +172,7 @@
 		F41EB4AC1A1A561400DAF540 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F41EB4D01A1A582100DAF540 /* ArticleTableViewCell.swift */,
 				F41EB4AD1A1A561400DAF540 /* Info.plist */,
 			);
 			name = "Supporting Files";
