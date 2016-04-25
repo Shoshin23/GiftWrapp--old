@@ -20,6 +20,14 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if NSUserDefaults.standardUserDefaults().valueForKey("uid") != nil {
+            self.performSegueWithIdentifier("loggedIn", sender: nil)
+        }
+    }
+    
     
     @IBAction func fbButtonPressed(sender: UIButton) {
         
