@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7fc-Dm-sgH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pnl-Ec-nkZ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -356,10 +356,10 @@
             </objects>
             <point key="canvasLocation" x="1619" y="200"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="ss3-fo-Y07">
             <objects>
-                <viewController id="pnl-Ec-nkZ" sceneMemberID="viewController">
+                <viewController id="pnl-Ec-nkZ" customClass="LoginViewController" customModule="GiftWrapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Xi-iZ-yTw"/>
                         <viewControllerLayoutGuide type="bottom" id="75O-QU-ChD"/>
@@ -371,26 +371,31 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="6lL-o8-WKj">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="766"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="766" id="2Hm-Lw-RgJ"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w73-rH-IPz">
-                                <rect key="frame" x="181" y="469" width="280" height="42"/>
+                                <rect key="frame" x="160" y="538" width="280" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="a0o-aB-olw"/>
+                                    <constraint firstAttribute="width" constant="280" id="bzW-us-2ge"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="19"/>
                                 <state key="normal" title="Login With Facebook"/>
+                                <connections>
+                                    <action selector="fbButtonPressed:" destination="pnl-Ec-nkZ" eventType="touchUpInside" id="0pw-9b-k6G"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="6lL-o8-WKj" secondAttribute="trailing" constant="-20" id="33L-YN-4yx"/>
-                            <constraint firstItem="w73-rH-IPz" firstAttribute="leading" secondItem="82L-sz-l9v" secondAttribute="leading" constant="181" id="8NU-pm-BgI"/>
-                            <constraint firstItem="6lL-o8-WKj" firstAttribute="top" secondItem="82L-sz-l9v" secondAttribute="topMargin" id="Dep-rR-CHF"/>
-                            <constraint firstItem="6lL-o8-WKj" firstAttribute="leading" secondItem="82L-sz-l9v" secondAttribute="leadingMargin" constant="-20" id="Q8C-7E-fXl"/>
-                            <constraint firstItem="75O-QU-ChD" firstAttribute="top" secondItem="w73-rH-IPz" secondAttribute="bottom" constant="89" id="daK-rh-efd"/>
-                            <constraint firstItem="w73-rH-IPz" firstAttribute="top" secondItem="3Xi-iZ-yTw" secondAttribute="bottom" constant="449" id="vdi-bS-FwR"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="6lL-o8-WKj" secondAttribute="bottom" constant="-166" id="ya7-Fs-Z8I"/>
+                            <constraint firstItem="6lL-o8-WKj" firstAttribute="leading" secondItem="82L-sz-l9v" secondAttribute="leading" id="HXS-QW-eUS"/>
+                            <constraint firstAttribute="bottom" secondItem="w73-rH-IPz" secondAttribute="bottom" constant="20" symbolic="YES" id="OW5-K4-ogY"/>
+                            <constraint firstItem="w73-rH-IPz" firstAttribute="top" secondItem="3Xi-iZ-yTw" secondAttribute="bottom" constant="518" id="TzG-8z-Vv2"/>
+                            <constraint firstItem="6lL-o8-WKj" firstAttribute="top" secondItem="82L-sz-l9v" secondAttribute="top" id="VnO-EP-tey"/>
+                            <constraint firstItem="6lL-o8-WKj" firstAttribute="centerX" secondItem="w73-rH-IPz" secondAttribute="centerX" id="bg5-z8-EnB"/>
+                            <constraint firstAttribute="trailing" secondItem="6lL-o8-WKj" secondAttribute="trailing" id="u6i-wR-3QI"/>
                         </constraints>
                     </view>
                 </viewController>

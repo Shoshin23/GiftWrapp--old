@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30486DDC1CCEAB38003C78EB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30486DD91CCEAB38003C78EB /* Bolts.framework */; };
+		30486DDD1CCEAB38003C78EB /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30486DDA1CCEAB38003C78EB /* FBSDKCoreKit.framework */; };
+		30486DDE1CCEAB38003C78EB /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30486DDB1CCEAB38003C78EB /* FBSDKLoginKit.framework */; };
 		308EA83C1CC511C500C51D11 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308EA83B1CC511C500C51D11 /* MaterialView.swift */; };
 		308EA8521CC5530D00C51D11 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 308EA8401CC552F900C51D11 /* Roboto-Black.ttf */; };
 		308EA8531CC5530D00C51D11 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 308EA8411CC552F900C51D11 /* Roboto-BlackItalic.ttf */; };
@@ -26,9 +29,11 @@
 		308EA8611CC5530D00C51D11 /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 308EA84F1CC552F900C51D11 /* RobotoCondensed-Light.ttf */; };
 		308EA8621CC5530D00C51D11 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 308EA8501CC552F900C51D11 /* RobotoCondensed-LightItalic.ttf */; };
 		308EA8631CC5530D00C51D11 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 308EA8511CC552F900C51D11 /* RobotoCondensed-Regular.ttf */; };
+		309F16801CCEAE3C0045ADE5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F167F1CCEAE3C0045ADE5 /* LoginViewController.swift */; };
 		30A9B8B71CC93CC1003B19AF /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9B8B61CC93CC1003B19AF /* GiftViewController.swift */; };
 		30FA3EA41CC3611000937FF2 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FA3EA31CC3610F00937FF2 /* Gift.swift */; };
 		30FA3EF51CC3BC7600937FF2 /* GiftDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */; };
+		6280533753DC33B97DFFD7C7 /* Pods_GiftWrapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A26A1B66A9564B87BAE7AD2 /* Pods_GiftWrapp.framework */; };
 		F41EB4AF1A1A561400DAF540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41EB4AE1A1A561400DAF540 /* AppDelegate.swift */; };
 		F41EB4B41A1A561400DAF540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41EB4B21A1A561400DAF540 /* Main.storyboard */; };
 		F41EB4B61A1A561400DAF540 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F41EB4B51A1A561400DAF540 /* Images.xcassets */; };
@@ -48,6 +53,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30486DD91CCEAB38003C78EB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		30486DDA1CCEAB38003C78EB /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		30486DDB1CCEAB38003C78EB /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		308EA83B1CC511C500C51D11 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		308EA8401CC552F900C51D11 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Black.ttf"; path = "../../roboto/Roboto-Black.ttf"; sourceTree = "<group>"; };
 		308EA8411CC552F900C51D11 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-BlackItalic.ttf"; path = "../../roboto/Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
@@ -67,9 +75,13 @@
 		308EA84F1CC552F900C51D11 /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-Light.ttf"; path = "../../roboto/RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
 		308EA8501CC552F900C51D11 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-LightItalic.ttf"; path = "../../roboto/RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
 		308EA8511CC552F900C51D11 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-Regular.ttf"; path = "../../roboto/RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		309F167F1CCEAE3C0045ADE5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		30A9B8B61CC93CC1003B19AF /* GiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GiftViewController.swift; path = ../GiftViewController.swift; sourceTree = "<group>"; };
 		30FA3EA31CC3610F00937FF2 /* Gift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftDetailViewController.swift; sourceTree = "<group>"; };
+		476EB3BEFF0EE3531570C89C /* Pods-GiftWrapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftWrapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GiftWrapp/Pods-GiftWrapp.debug.xcconfig"; sourceTree = "<group>"; };
+		7A26A1B66A9564B87BAE7AD2 /* Pods_GiftWrapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiftWrapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62E69E42716281260E76A9A /* Pods-GiftWrapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftWrapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GiftWrapp/Pods-GiftWrapp.release.xcconfig"; sourceTree = "<group>"; };
 		F41EB4A91A1A561400DAF540 /* GiftWrapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftWrapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41EB4AD1A1A561400DAF540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F41EB4AE1A1A561400DAF540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +99,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30486DDC1CCEAB38003C78EB /* Bolts.framework in Frameworks */,
+				30486DDD1CCEAB38003C78EB /* FBSDKCoreKit.framework in Frameworks */,
+				30486DDE1CCEAB38003C78EB /* FBSDKLoginKit.framework in Frameworks */,
+				6280533753DC33B97DFFD7C7 /* Pods_GiftWrapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,12 +149,31 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		4CFAEAEF70F089865882FE85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A26A1B66A9564B87BAE7AD2 /* Pods_GiftWrapp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B673B891E150F4F3F5B360E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				476EB3BEFF0EE3531570C89C /* Pods-GiftWrapp.debug.xcconfig */,
+				B62E69E42716281260E76A9A /* Pods-GiftWrapp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F41EB4A01A1A561400DAF540 = {
 			isa = PBXGroup;
 			children = (
 				F41EB4AB1A1A561400DAF540 /* GiftWrapp */,
 				F41EB4C11A1A561400DAF540 /* GiftWrappTests */,
 				F41EB4AA1A1A561400DAF540 /* Products */,
+				B673B891E150F4F3F5B360E7 /* Pods */,
+				4CFAEAEF70F089865882FE85 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,14 +189,19 @@
 		F41EB4AB1A1A561400DAF540 /* GiftWrapp */ = {
 			isa = PBXGroup;
 			children = (
+				30486DD91CCEAB38003C78EB /* Bolts.framework */,
+				30486DDA1CCEAB38003C78EB /* FBSDKCoreKit.framework */,
+				30486DDB1CCEAB38003C78EB /* FBSDKLoginKit.framework */,
 				308EA83D1CC5523F00C51D11 /* Resources */,
 				308EA83A1CC511B500C51D11 /* Material Design */,
 				F41EB4AE1A1A561400DAF540 /* AppDelegate.swift */,
+				309F167F1CCEAE3C0045ADE5 /* LoginViewController.swift */,
 				F41EB4B21A1A561400DAF540 /* Main.storyboard */,
 				30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */,
 				F41EB4B51A1A561400DAF540 /* Images.xcassets */,
 				30FA3EA31CC3610F00937FF2 /* Gift.swift */,
 				F41EB4B71A1A561400DAF540 /* LaunchScreen.xib */,
+				F41EB4D01A1A582100DAF540 /* ArticleTableViewCell.swift */,
 				F41EB4AC1A1A561400DAF540 /* Supporting Files */,
 				30A9B8B61CC93CC1003B19AF /* GiftViewController.swift */,
 			);
@@ -172,7 +212,6 @@
 		F41EB4AC1A1A561400DAF540 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F41EB4D01A1A582100DAF540 /* ArticleTableViewCell.swift */,
 				F41EB4AD1A1A561400DAF540 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -203,9 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F41EB4C81A1A561400DAF540 /* Build configuration list for PBXNativeTarget "GiftWrapp" */;
 			buildPhases = (
+				C71BEF03CE36671DD0DC458D /* Check Pods Manifest.lock */,
 				F41EB4A51A1A561400DAF540 /* Sources */,
 				F41EB4A61A1A561400DAF540 /* Frameworks */,
 				F41EB4A71A1A561400DAF540 /* Resources */,
+				7C7994D75214E2C635B1BE94 /* Embed Pods Frameworks */,
+				4AE5D4AB690B9FB483382E80 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,11 +352,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4AE5D4AB690B9FB483382E80 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GiftWrapp/Pods-GiftWrapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C7994D75214E2C635B1BE94 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GiftWrapp/Pods-GiftWrapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C71BEF03CE36671DD0DC458D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F41EB4A51A1A561400DAF540 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309F16801CCEAE3C0045ADE5 /* LoginViewController.swift in Sources */,
 				30FA3EA41CC3611000937FF2 /* Gift.swift in Sources */,
 				F41EB4D11A1A582100DAF540 /* ArticleTableViewCell.swift in Sources */,
 				F41EB4AF1A1A561400DAF540 /* AppDelegate.swift in Sources */,
@@ -442,24 +533,36 @@
 		};
 		F41EB4C91A1A561400DAF540 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 476EB3BEFF0EE3531570C89C /* Pods-GiftWrapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TableCellAnimation",
+				);
 				INFOPLIST_FILE = TableCellAnimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sample.edu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lotusbee.giftwrapp;
 				PRODUCT_NAME = GiftWrapp;
 			};
 			name = Debug;
 		};
 		F41EB4CA1A1A561400DAF540 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B62E69E42716281260E76A9A /* Pods-GiftWrapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/TableCellAnimation",
+				);
 				INFOPLIST_FILE = TableCellAnimation/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.sample.edu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lotusbee.giftwrapp;
 				PRODUCT_NAME = GiftWrapp;
 			};
 			name = Release;
