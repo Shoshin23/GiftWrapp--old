@@ -398,6 +398,9 @@
                             <constraint firstAttribute="trailing" secondItem="6lL-o8-WKj" secondAttribute="trailing" id="u6i-wR-3QI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="7fc-Dm-sgH" kind="show" identifier="loggedIn" id="duO-La-vkX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0pe-E6-sNU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

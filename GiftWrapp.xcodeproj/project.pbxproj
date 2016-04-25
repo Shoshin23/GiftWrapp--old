@@ -30,6 +30,7 @@
 		308EA8621CC5530D00C51D11 /* RobotoCondensed-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 308EA8501CC552F900C51D11 /* RobotoCondensed-LightItalic.ttf */; };
 		308EA8631CC5530D00C51D11 /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 308EA8511CC552F900C51D11 /* RobotoCondensed-Regular.ttf */; };
 		309F16801CCEAE3C0045ADE5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F167F1CCEAE3C0045ADE5 /* LoginViewController.swift */; };
+		309F16821CCEB2120045ADE5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F16811CCEB2120045ADE5 /* DataService.swift */; };
 		30A9B8B71CC93CC1003B19AF /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9B8B61CC93CC1003B19AF /* GiftViewController.swift */; };
 		30FA3EA41CC3611000937FF2 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FA3EA31CC3610F00937FF2 /* Gift.swift */; };
 		30FA3EF51CC3BC7600937FF2 /* GiftDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */; };
@@ -76,6 +77,7 @@
 		308EA8501CC552F900C51D11 /* RobotoCondensed-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-LightItalic.ttf"; path = "../../roboto/RobotoCondensed-LightItalic.ttf"; sourceTree = "<group>"; };
 		308EA8511CC552F900C51D11 /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoCondensed-Regular.ttf"; path = "../../roboto/RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
 		309F167F1CCEAE3C0045ADE5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		309F16811CCEB2120045ADE5 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		30A9B8B61CC93CC1003B19AF /* GiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GiftViewController.swift; path = ../GiftViewController.swift; sourceTree = "<group>"; };
 		30FA3EA31CC3610F00937FF2 /* Gift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftDetailViewController.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				308EA83A1CC511B500C51D11 /* Material Design */,
 				F41EB4AE1A1A561400DAF540 /* AppDelegate.swift */,
 				309F167F1CCEAE3C0045ADE5 /* LoginViewController.swift */,
+				309F16811CCEB2120045ADE5 /* DataService.swift */,
 				F41EB4B21A1A561400DAF540 /* Main.storyboard */,
 				30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */,
 				F41EB4B51A1A561400DAF540 /* Images.xcassets */,
@@ -412,6 +415,7 @@
 				308EA83C1CC511C500C51D11 /* MaterialView.swift in Sources */,
 				30A9B8B71CC93CC1003B19AF /* GiftViewController.swift in Sources */,
 				30FA3EF51CC3BC7600937FF2 /* GiftDetailViewController.swift in Sources */,
+				309F16821CCEB2120045ADE5 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
