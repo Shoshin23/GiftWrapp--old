@@ -372,14 +372,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="766"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="766" id="2Hm-Lw-RgJ"/>
+                                    <constraint firstAttribute="height" constant="766" id="GWv-1j-3Qy"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w73-rH-IPz">
                                 <rect key="frame" x="160" y="538" width="280" height="42"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="280" id="bzW-us-2ge"/>
+                                    <constraint firstAttribute="height" constant="42" id="U6O-WF-a4a"/>
+                                    <constraint firstAttribute="width" constant="280" id="f04-eW-CDn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="19"/>
                                 <state key="normal" title="Login With Facebook"/>
@@ -390,12 +391,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="6lL-o8-WKj" firstAttribute="leading" secondItem="82L-sz-l9v" secondAttribute="leading" id="HXS-QW-eUS"/>
-                            <constraint firstAttribute="bottom" secondItem="w73-rH-IPz" secondAttribute="bottom" constant="20" symbolic="YES" id="OW5-K4-ogY"/>
-                            <constraint firstItem="w73-rH-IPz" firstAttribute="top" secondItem="3Xi-iZ-yTw" secondAttribute="bottom" constant="518" id="TzG-8z-Vv2"/>
-                            <constraint firstItem="6lL-o8-WKj" firstAttribute="top" secondItem="82L-sz-l9v" secondAttribute="top" id="VnO-EP-tey"/>
-                            <constraint firstItem="6lL-o8-WKj" firstAttribute="centerX" secondItem="w73-rH-IPz" secondAttribute="centerX" id="bg5-z8-EnB"/>
-                            <constraint firstAttribute="trailing" secondItem="6lL-o8-WKj" secondAttribute="trailing" id="u6i-wR-3QI"/>
+                            <constraint firstItem="6lL-o8-WKj" firstAttribute="top" secondItem="82L-sz-l9v" secondAttribute="top" id="Ig7-lp-K6T"/>
+                            <constraint firstItem="6lL-o8-WKj" firstAttribute="centerX" secondItem="w73-rH-IPz" secondAttribute="centerX" id="M4Q-NY-dUT"/>
+                            <constraint firstAttribute="bottom" secondItem="w73-rH-IPz" secondAttribute="bottom" constant="20" symbolic="YES" id="jiN-bD-4Vy"/>
+                            <constraint firstItem="6lL-o8-WKj" firstAttribute="leading" secondItem="82L-sz-l9v" secondAttribute="leading" id="mrB-IL-Unc"/>
+                            <constraint firstAttribute="trailing" secondItem="6lL-o8-WKj" secondAttribute="trailing" id="nhY-rB-LYi"/>
                         </constraints>
                     </view>
                     <connections>
