@@ -32,6 +32,7 @@
 		309F16801CCEAE3C0045ADE5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F167F1CCEAE3C0045ADE5 /* LoginViewController.swift */; };
 		309F16821CCEB2120045ADE5 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309F16811CCEB2120045ADE5 /* DataService.swift */; };
 		30A9B8B71CC93CC1003B19AF /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9B8B61CC93CC1003B19AF /* GiftViewController.swift */; };
+		30BD39271CD6646A00145C1B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BD39261CD6646A00145C1B /* ProfileViewController.swift */; };
 		30FA3EA41CC3611000937FF2 /* Gift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FA3EA31CC3610F00937FF2 /* Gift.swift */; };
 		30FA3EF51CC3BC7600937FF2 /* GiftDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */; };
 		6280533753DC33B97DFFD7C7 /* Pods_GiftWrapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A26A1B66A9564B87BAE7AD2 /* Pods_GiftWrapp.framework */; };
@@ -79,6 +80,7 @@
 		309F167F1CCEAE3C0045ADE5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		309F16811CCEB2120045ADE5 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		30A9B8B61CC93CC1003B19AF /* GiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GiftViewController.swift; path = ../GiftViewController.swift; sourceTree = "<group>"; };
+		30BD39261CD6646A00145C1B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		30FA3EA31CC3610F00937FF2 /* Gift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
 		30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftDetailViewController.swift; sourceTree = "<group>"; };
 		476EB3BEFF0EE3531570C89C /* Pods-GiftWrapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftWrapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GiftWrapp/Pods-GiftWrapp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +153,25 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		30BD39251CD6626800145C1B /* Data Service */ = {
+			isa = PBXGroup;
+			children = (
+				309F16811CCEB2120045ADE5 /* DataService.swift */,
+			);
+			name = "Data Service";
+			sourceTree = "<group>";
+		};
+		30BD39281CD6647600145C1B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				30A9B8B61CC93CC1003B19AF /* GiftViewController.swift */,
+				309F167F1CCEAE3C0045ADE5 /* LoginViewController.swift */,
+				30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */,
+				30BD39261CD6646A00145C1B /* ProfileViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		4CFAEAEF70F089865882FE85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,22 +212,20 @@
 		F41EB4AB1A1A561400DAF540 /* GiftWrapp */ = {
 			isa = PBXGroup;
 			children = (
+				30BD39251CD6626800145C1B /* Data Service */,
 				30486DD91CCEAB38003C78EB /* Bolts.framework */,
 				30486DDA1CCEAB38003C78EB /* FBSDKCoreKit.framework */,
 				30486DDB1CCEAB38003C78EB /* FBSDKLoginKit.framework */,
 				308EA83D1CC5523F00C51D11 /* Resources */,
-				308EA83A1CC511B500C51D11 /* Material Design */,
 				F41EB4AE1A1A561400DAF540 /* AppDelegate.swift */,
-				309F167F1CCEAE3C0045ADE5 /* LoginViewController.swift */,
-				309F16811CCEB2120045ADE5 /* DataService.swift */,
+				30BD39281CD6647600145C1B /* Controllers */,
 				F41EB4B21A1A561400DAF540 /* Main.storyboard */,
-				30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */,
+				308EA83A1CC511B500C51D11 /* Material Design */,
 				F41EB4B51A1A561400DAF540 /* Images.xcassets */,
 				30FA3EA31CC3610F00937FF2 /* Gift.swift */,
 				F41EB4B71A1A561400DAF540 /* LaunchScreen.xib */,
 				F41EB4D01A1A582100DAF540 /* ArticleTableViewCell.swift */,
 				F41EB4AC1A1A561400DAF540 /* Supporting Files */,
-				30A9B8B61CC93CC1003B19AF /* GiftViewController.swift */,
 			);
 			name = GiftWrapp;
 			path = TableCellAnimation;
@@ -415,6 +434,7 @@
 				F41EB4AF1A1A561400DAF540 /* AppDelegate.swift in Sources */,
 				308EA83C1CC511C500C51D11 /* MaterialView.swift in Sources */,
 				30A9B8B71CC93CC1003B19AF /* GiftViewController.swift in Sources */,
+				30BD39271CD6646A00145C1B /* ProfileViewController.swift in Sources */,
 				30FA3EF51CC3BC7600937FF2 /* GiftDetailViewController.swift in Sources */,
 				309F16821CCEB2120045ADE5 /* DataService.swift in Sources */,
 			);

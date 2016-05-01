@@ -52,6 +52,10 @@ class LoginViewController: UIViewController {
                         
                         NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
                         
+                        let user = ["provider":authData.provider!,"displayName":authData.providerData["displayName"]!,"cachedProfile":authData.providerData["cachedUserProfile"]!]
+                        
+                        DataService.ds.createFirebaseUser(authData.uid, user: user)
+                        
                         self.performSegueWithIdentifier("loggedIn", sender: nil)
                     }
                     

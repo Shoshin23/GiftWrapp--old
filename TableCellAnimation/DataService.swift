@@ -10,13 +10,25 @@ import Foundation
 import Firebase
 
 
+let BASE_URL = "https://giftwrapp.firebaseio.com/"
+
 class DataService {
     
     static let ds = DataService()
     
-    private var _REF_BASE = Firebase(url: "https://giftwrapp.firebaseio.com/")
+    private var _REF_BASE = Firebase(url: "\(BASE_URL)")
+    private var _REF_USERS = Firebase(url: "\(BASE_URL)").childByAppendingPath("users")
     
     var REF_BASE: Firebase {
         return _REF_BASE
+    }
+    
+    var REF_USERS:Firebase {
+        return _REF_USERS
+    }
+    
+    func createFirebaseUser(uid:String, user:Dictionary<String, AnyObject>) {
+        
+        REF_USERS.childByAppendingPath(uid).setValue(user)
     }
 }
