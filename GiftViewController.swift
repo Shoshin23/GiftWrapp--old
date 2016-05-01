@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class GiftViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -27,6 +28,7 @@ class GiftViewController: UIViewController, UITableViewDataSource, UITableViewDe
             tableView.separatorColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue:
                 240.0/255.0, alpha: 0.8)
             print("In GiftViewController")
+
             
             
             navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .Plain, target: nil, action: nil)

@@ -425,10 +425,10 @@
             </objects>
             <point key="canvasLocation" x="1619" y="200"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="Dph-qG-5ww">
             <objects>
-                <viewController id="0TS-1e-CTj" sceneMemberID="viewController">
+                <viewController id="0TS-1e-CTj" customClass="ProfileViewController" customModule="GiftWrapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ADn-wt-XdP"/>
                         <viewControllerLayoutGuide type="bottom" id="YRd-HS-tHN"/>
