@@ -52,7 +52,7 @@ class LoginViewController: UIViewController {
                         
                         NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: "uid")
                         
-                        let user = ["provider":authData.provider!,"displayName":authData.providerData["displayName"]!,"cachedProfile":authData.providerData["cachedUserProfile"]!]
+                        let user = ["provider":authData.provider!,"displayName":authData.providerData["displayName"]!,"cachedProfile":authData.providerData["cachedUserProfile"]!, "imageURL":authData.providerData["profileImageURL"]!]
                         
                         DataService.ds.createFirebaseUser(authData.uid, user: user)
                         

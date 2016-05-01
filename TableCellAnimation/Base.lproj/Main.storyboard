@@ -436,9 +436,30 @@
                     <view key="view" contentMode="scaleToFill" id="6IG-PG-HfN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Lr-KM-GaR">
+                                <rect key="frame" x="20" y="68" width="21" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUr-xo-twv">
+                                <rect key="frame" x="42" y="68" width="139" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="GW Logo" translatesAutoresizingMaskIntoConstraints="NO" id="FmX-le-CwD">
+                                <rect key="frame" x="180" y="118" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.59617952361466076" green="0.63820418482443131" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="recents" id="bPw-Hm-KoJ"/>
+                    <connections>
+                        <outlet property="profileImage" destination="FmX-le-CwD" id="yr7-5v-5hm"/>
+                        <outlet property="profileName" destination="rUr-xo-twv" id="HPS-V6-WEO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rpW-oC-okY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -464,6 +485,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="GW Logo" width="1024" height="1024"/>
         <image name="LaunchScreen" width="750" height="1334"/>
         <image name="bts" width="780" height="457"/>
         <image name="photoalbum" width="84" height="84"/>
