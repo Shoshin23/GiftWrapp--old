@@ -18,6 +18,7 @@ class DataService {
     
     private var _REF_BASE = Firebase(url: "\(BASE_URL)")
     private var _REF_USERS = Firebase(url: "\(BASE_URL)").childByAppendingPath("users")
+    private var _REF_POSTS = Firebase(url: "\(BASE_URL)").childByAppendingPath("posts")
     
     var REF_BASE: Firebase {
         return _REF_BASE
@@ -25,6 +26,10 @@ class DataService {
     
     var REF_USERS:Firebase {
         return _REF_USERS
+    }
+    
+    var REF_POSTS: Firebase {
+    return _REF_POSTS
     }
     
     var REF_USER_CURRENT:Firebase {

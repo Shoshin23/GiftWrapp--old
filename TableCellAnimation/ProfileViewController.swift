@@ -20,7 +20,7 @@ class ProfileViewController: UIViewController {
         
         let profileName = DataService.ds.REF_USER_CURRENT.childByAppendingPath("displayName")
         profileName.observeEventType(.Value, withBlock: { snapshot in
-            self.profileName.text = snapshot.value! as! String
+            self.profileName.text = snapshot.value! as? String
         
         })
         

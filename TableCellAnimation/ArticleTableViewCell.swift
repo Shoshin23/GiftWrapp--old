@@ -16,9 +16,20 @@ class ArticleTableViewCell: UITableViewCell {
     @IBOutlet var giftDescription: UITextView!
     @IBOutlet var priceLabel: UILabel!
     
+    var gift: Gift!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    
+    func configureCell(gift: Gift) {
+        self.gift = gift
+        
+        self.giftDescription.text = gift.giftDescription
+        self.giftTitle.text = gift.giftName
+        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

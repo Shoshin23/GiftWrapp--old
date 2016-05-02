@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3010654F1CD7C61100604B22 /* AddGiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3010654E1CD7C61100604B22 /* AddGiftViewController.swift */; };
+		301065511CD7D3FB00604B22 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301065501CD7D3FB00604B22 /* ImageStore.swift */; };
+		301065531CD7D43900604B22 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301065521CD7D43900604B22 /* Constants.swift */; };
 		30486DDC1CCEAB38003C78EB /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30486DD91CCEAB38003C78EB /* Bolts.framework */; };
 		30486DDD1CCEAB38003C78EB /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30486DDA1CCEAB38003C78EB /* FBSDKCoreKit.framework */; };
 		30486DDE1CCEAB38003C78EB /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30486DDB1CCEAB38003C78EB /* FBSDKLoginKit.framework */; };
@@ -55,6 +58,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3010654E1CD7C61100604B22 /* AddGiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddGiftViewController.swift; sourceTree = "<group>"; };
+		301065501CD7D3FB00604B22 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
+		301065521CD7D43900604B22 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		30486DD91CCEAB38003C78EB /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		30486DDA1CCEAB38003C78EB /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		30486DDB1CCEAB38003C78EB /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
@@ -81,7 +87,7 @@
 		309F16811CCEB2120045ADE5 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		30A9B8B61CC93CC1003B19AF /* GiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GiftViewController.swift; path = ../GiftViewController.swift; sourceTree = "<group>"; };
 		30BD39261CD6646A00145C1B /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		30FA3EA31CC3610F00937FF2 /* Gift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gift.swift; sourceTree = "<group>"; };
+		30FA3EA31CC3610F00937FF2 /* Gift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gift.swift; path = TableCellAnimation/Gift.swift; sourceTree = "<group>"; };
 		30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftDetailViewController.swift; sourceTree = "<group>"; };
 		476EB3BEFF0EE3531570C89C /* Pods-GiftWrapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiftWrapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GiftWrapp/Pods-GiftWrapp.debug.xcconfig"; sourceTree = "<group>"; };
 		7A26A1B66A9564B87BAE7AD2 /* Pods_GiftWrapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiftWrapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,7 +101,7 @@
 		F41EB4BE1A1A561400DAF540 /* GiftWrapp.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GiftWrapp.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41EB4C31A1A561400DAF540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F41EB4C41A1A561400DAF540 /* TableCellAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellAnimationTests.swift; sourceTree = "<group>"; };
-		F41EB4D01A1A582100DAF540 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		F41EB4D01A1A582100DAF540 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ArticleTableViewCell.swift; path = TableCellAnimation/ArticleTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3010654C1CD7BB9100604B22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F41EB4D01A1A582100DAF540 /* ArticleTableViewCell.swift */,
+			);
+			name = View;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3010654D1CD7BC1800604B22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30FA3EA31CC3610F00937FF2 /* Gift.swift */,
+			);
+			name = Model;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		308EA83A1CC511B500C51D11 /* Material Design */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +181,8 @@
 			isa = PBXGroup;
 			children = (
 				309F16811CCEB2120045ADE5 /* DataService.swift */,
+				301065501CD7D3FB00604B22 /* ImageStore.swift */,
+				301065521CD7D43900604B22 /* Constants.swift */,
 			);
 			name = "Data Service";
 			sourceTree = "<group>";
@@ -168,6 +194,7 @@
 				309F167F1CCEAE3C0045ADE5 /* LoginViewController.swift */,
 				30FA3EF41CC3BC7600937FF2 /* GiftDetailViewController.swift */,
 				30BD39261CD6646A00145C1B /* ProfileViewController.swift */,
+				3010654E1CD7C61100604B22 /* AddGiftViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -212,19 +239,19 @@
 		F41EB4AB1A1A561400DAF540 /* GiftWrapp */ = {
 			isa = PBXGroup;
 			children = (
+				308EA83A1CC511B500C51D11 /* Material Design */,
 				30BD39251CD6626800145C1B /* Data Service */,
 				30486DD91CCEAB38003C78EB /* Bolts.framework */,
 				30486DDA1CCEAB38003C78EB /* FBSDKCoreKit.framework */,
 				30486DDB1CCEAB38003C78EB /* FBSDKLoginKit.framework */,
 				308EA83D1CC5523F00C51D11 /* Resources */,
 				F41EB4AE1A1A561400DAF540 /* AppDelegate.swift */,
+				3010654C1CD7BB9100604B22 /* View */,
 				30BD39281CD6647600145C1B /* Controllers */,
-				F41EB4B21A1A561400DAF540 /* Main.storyboard */,
-				308EA83A1CC511B500C51D11 /* Material Design */,
+				3010654D1CD7BC1800604B22 /* Model */,
 				F41EB4B51A1A561400DAF540 /* Images.xcassets */,
-				30FA3EA31CC3610F00937FF2 /* Gift.swift */,
+				F41EB4B21A1A561400DAF540 /* Main.storyboard */,
 				F41EB4B71A1A561400DAF540 /* LaunchScreen.xib */,
-				F41EB4D01A1A582100DAF540 /* ArticleTableViewCell.swift */,
 				F41EB4AC1A1A561400DAF540 /* Supporting Files */,
 			);
 			name = GiftWrapp;
@@ -428,15 +455,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				301065511CD7D3FB00604B22 /* ImageStore.swift in Sources */,
 				309F16801CCEAE3C0045ADE5 /* LoginViewController.swift in Sources */,
 				30FA3EA41CC3611000937FF2 /* Gift.swift in Sources */,
 				F41EB4D11A1A582100DAF540 /* ArticleTableViewCell.swift in Sources */,
 				F41EB4AF1A1A561400DAF540 /* AppDelegate.swift in Sources */,
 				308EA83C1CC511C500C51D11 /* MaterialView.swift in Sources */,
 				30A9B8B71CC93CC1003B19AF /* GiftViewController.swift in Sources */,
+				3010654F1CD7C61100604B22 /* AddGiftViewController.swift in Sources */,
 				30BD39271CD6646A00145C1B /* ProfileViewController.swift in Sources */,
 				30FA3EF51CC3BC7600937FF2 /* GiftDetailViewController.swift in Sources */,
 				309F16821CCEB2120045ADE5 /* DataService.swift in Sources */,
+				301065531CD7D43900604B22 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

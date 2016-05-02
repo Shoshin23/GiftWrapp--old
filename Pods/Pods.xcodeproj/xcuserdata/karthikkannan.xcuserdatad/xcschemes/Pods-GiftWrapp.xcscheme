@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F1A04B4AFE05DC6E8A381105'
+               BlueprintIdentifier = 'F820AF0140D2DBA1B5F99A7F'
                BlueprintName = 'Pods-GiftWrapp'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_GiftWrapp.framework'>

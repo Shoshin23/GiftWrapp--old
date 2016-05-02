@@ -24,11 +24,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TableCellAnimation/Gift.swift"
-            timestampString = "482693054.917382"
+            timestampString = "483901781.932391"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
             landmarkName = "init(giftName:giftPrice:giftDescription:giftImage:giftAvailableAt:)"
             landmarkType = "5">
          </BreakpointContent>
