@@ -27,9 +27,12 @@ class AddGiftViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     @IBOutlet var giftImageView: UIImageView!
     
-    
+//    var Timestamp: String {
+//        return "\(NSDate().timeIntervalSince1970 * 1000)"
+//    }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        
         
         imagePicker.dismissViewControllerAnimated(true, completion: nil)
         giftImageView.image = image
@@ -39,6 +42,8 @@ class AddGiftViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBAction func selectImage(sender: UITapGestureRecognizer) {
         
         print("SelectImage Tapped")
+        imagePicker.allowsEditing = true
+        imagePicker.sourceType = .PhotoLibrary
         
         presentViewController(imagePicker, animated: true, completion: nil)
         
@@ -59,6 +64,8 @@ class AddGiftViewController: UIViewController, UIImagePickerControllerDelegate, 
         self.giftAvailableAt.delegate = self
         
         
+        
+        
     }
     
     func postToFirebase(imgUrl: String) {
@@ -68,7 +75,7 @@ class AddGiftViewController: UIViewController, UIImagePickerControllerDelegate, 
             "giftAvailableAt": giftAvailableAt.text!,
             "giftPrice": Int(giftPrice.text!)!,
             "username": NSUserDefaults.standardUserDefaults().valueForKey("uid")!,
-            "giftImage":imgUrl
+            "giftImage":imgUrl,
         ]
         
         let firebasePost = DataService.ds.REF_POSTS.childByAutoId()

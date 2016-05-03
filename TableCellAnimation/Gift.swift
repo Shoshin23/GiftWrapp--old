@@ -17,8 +17,8 @@ class Gift:NSObject {
     var giftAvailableAt = " "
     var username = " "
     var postKey:String!
-    
-    init(giftName:String, giftPrice:Int, giftDescription:String, giftImage:String, giftAvailableAt: String,username:String) {
+
+    init(giftName:String, giftPrice:Int, giftDescription:String, giftImage:String, giftAvailableAt: String,username:String,Timestamp:String) {
         self.giftName = giftName
         self.giftPrice = giftPrice
         self.giftDescription = giftDescription
@@ -53,6 +53,8 @@ class Gift:NSObject {
         if let username = dictionary["username"] as? String {
             self.username = username
         }
+        
+        
         
     }
     

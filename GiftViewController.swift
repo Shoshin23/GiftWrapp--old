@@ -14,11 +14,11 @@ class GiftViewController: UIViewController, UITableViewDataSource, UITableViewDe
 
     @IBOutlet var tableView: UITableView!
         
-    var gifts:[Gift] = [Gift(giftName:"Hello", giftPrice: 34, giftDescription: "Hello World",giftImage: "GiftWrapp Logo", giftAvailableAt: "Amazon",username: "karthik"),
-                        Gift(giftName: "Freitag RocketRucksack Bag", giftPrice: 56, giftDescription: "Lorem ipsum dolor sit amet, vix at illud zril. Ei per labore percipitur, et graeci eripuit vel. Quod interpretaris vis eu, nam ne clita legimus. Viris quaerendum id vis. Nec ex mollis contentiones, ne probo imperdiet sed.", giftImage: "bts", giftAvailableAt: "Amazon",username: "karthik"),
-                        Gift(giftName:"Braun's Men Classic Analog Display Watch", giftPrice: 160, giftDescription: "The watch is designed by the legen Dieter Rams himself and I would", giftImage:"gamecenter", giftAvailableAt: "Flipkart.com",username: "karthik")]
+//    var gifts:[Gift] = [Gift(giftName:"Hello", giftPrice: 34, giftDescription: "Hello World",giftImage: "GiftWrapp Logo", giftAvailableAt: "Amazon",username: "karthik"),
+//                        Gift(giftName: "Freitag RocketRucksack Bag", giftPrice: 56, giftDescription: "Lorem ipsum dolor sit amet, vix at illud zril. Ei per labore percipitur, et graeci eripuit vel. Quod interpretaris vis eu, nam ne clita legimus. Viris quaerendum id vis. Nec ex mollis contentiones, ne probo imperdiet sed.", giftImage: "bts", giftAvailableAt: "Amazon",username: "karthik"),
+//                        Gift(giftName:"Braun's Men Classic Analog Display Watch", giftPrice: 160, giftDescription: "The watch is designed by the legen Dieter Rams himself and I would", giftImage:"gamecenter", giftAvailableAt: "Flipkart.com",username: "karthik")]
+//    
     
-        
     
     var gifts2 = [Gift]()
         
@@ -154,7 +154,7 @@ class GiftViewController: UIViewController, UITableViewDataSource, UITableViewDe
                 if let indexPath = tableView.indexPathForSelectedRow {
                     let destinationController = segue.destinationViewController as! GiftDetailViewController
                     
-                    destinationController.gift = gifts[indexPath.row]
+                    destinationController.gift = gifts2[indexPath.row]
                 }
             }
         }
