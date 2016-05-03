@@ -22,7 +22,7 @@ class GiftViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     var gifts2 = [Gift]()
         
-        var postShown = [Bool](count: 6, repeatedValue: false)
+        var postShown = [Bool](count: 20000000, repeatedValue: false)
         
         override func viewDidLoad() {
             super.viewDidLoad()
