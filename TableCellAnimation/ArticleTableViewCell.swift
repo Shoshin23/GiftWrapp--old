@@ -29,6 +29,14 @@ class ArticleTableViewCell: UITableViewCell {
         
         self.giftDescription.text = gift.giftDescription
         self.giftTitle.text = gift.giftName
+        self.priceLabel.text = String(gift.giftPrice)
+        self.availableAt.text = gift.giftAvailableAt
+        
+        ImageStore.downloadImage(gift.giftImage, afterDownloadImage: { image in
+            self.postImageView.image = image
+            self.postImageView.hidden = false
+        
+        })
         
     }
 

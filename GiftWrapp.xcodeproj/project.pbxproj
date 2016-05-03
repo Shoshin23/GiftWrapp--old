@@ -177,6 +177,16 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		30BBA8CC1CD9100E00EC9F7D /* Framworks */ = {
+			isa = PBXGroup;
+			children = (
+				30486DD91CCEAB38003C78EB /* Bolts.framework */,
+				30486DDA1CCEAB38003C78EB /* FBSDKCoreKit.framework */,
+				30486DDB1CCEAB38003C78EB /* FBSDKLoginKit.framework */,
+			);
+			name = Framworks;
+			sourceTree = "<group>";
+		};
 		30BD39251CD6626800145C1B /* Data Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,11 +249,9 @@
 		F41EB4AB1A1A561400DAF540 /* GiftWrapp */ = {
 			isa = PBXGroup;
 			children = (
+				30BBA8CC1CD9100E00EC9F7D /* Framworks */,
 				308EA83A1CC511B500C51D11 /* Material Design */,
 				30BD39251CD6626800145C1B /* Data Service */,
-				30486DD91CCEAB38003C78EB /* Bolts.framework */,
-				30486DDA1CCEAB38003C78EB /* FBSDKCoreKit.framework */,
-				30486DDB1CCEAB38003C78EB /* FBSDKLoginKit.framework */,
 				308EA83D1CC5523F00C51D11 /* Resources */,
 				F41EB4AE1A1A561400DAF540 /* AppDelegate.swift */,
 				3010654C1CD7BB9100604B22 /* View */,

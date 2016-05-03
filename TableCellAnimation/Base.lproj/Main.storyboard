@@ -165,12 +165,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LotusBee Logo v1" translatesAutoresizingMaskIntoConstraints="NO" id="iCu-yH-ZK6">
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LotusBee Logo v1" translatesAutoresizingMaskIntoConstraints="NO" id="iCu-yH-ZK6">
                                 <rect key="frame" x="157" y="423" width="240" height="128"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="qN0-1p-8jf"/>
                                     <constraint firstAttribute="width" constant="240" id="ugP-8X-C4L"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Jje-3z-Mz8" appends="YES" id="U3E-Zm-zBu"/>
+                                </connections>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrZ-1b-liP">
                                 <rect key="frame" x="20" y="486" width="38" height="30"/>
@@ -207,6 +211,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y0p-Zr-wjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Jje-3z-Mz8">
+                    <connections>
+                        <action selector="selectImage:" destination="G7q-LR-zKF" id="caq-K0-dbx"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="577" y="982"/>
         </scene>

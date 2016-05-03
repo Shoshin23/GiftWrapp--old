@@ -29,7 +29,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
             endingLineNumber = "25"
-            landmarkName = "init(giftName:giftPrice:giftDescription:giftImage:giftAvailableAt:)"
+            landmarkName = "init(giftName:giftPrice:giftDescription:giftImage:giftAvailableAt:username:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
